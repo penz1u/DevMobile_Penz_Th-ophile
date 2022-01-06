@@ -22,10 +22,10 @@ const Movie = ({route}) => {
   // Pourrait être directement déclarée dans useEffect
   const requestMovie = async () => {
     try {
-      const zomatoMovieResult = await getMovieDetails(route.params.MovieID);
+      const zomatoMovieResult = await getMovieDetails(route.params.MovieId);
       setMovie(zomatoMovieResult);
       console.log("film est");
-      console.log(Movie);
+      console.log(movie);
       setIsLoading(false);
     } catch (error) {
       setIsError(true);

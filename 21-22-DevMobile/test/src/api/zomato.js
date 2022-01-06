@@ -16,7 +16,7 @@ const LONDON_ID = '61';
 };*/
 
 
-export async function getMovies(searchTerm = "", offset = 0) {
+export async function getMovies(searchTerm = '', offset = 0) {
   try {
     let response;
     switch (offset) {

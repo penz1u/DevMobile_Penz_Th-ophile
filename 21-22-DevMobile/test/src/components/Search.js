@@ -72,7 +72,7 @@ const Search = ({ navigation }) => {
       </View>
       {
         isError ?
-        (<DisplayError message='Impossible de récupérer les films' />) :
+        (<DisplayError message='Impossible de récupérer le(s) film(s)' />) :
         (<FlatList 
           data={movies}
           keyExtractor={(item) => item.id.toString()}
